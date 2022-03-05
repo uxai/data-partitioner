@@ -36,7 +36,6 @@ def segment_builder(arg, tail):
             Calculates the number of extras from the length of the list passed.
             Group extras: tells us when to start adding the extras to generated segments
             """
-            extras = len(req_list) - remainder
             group_extras = partition_count - remainder
 
             pos = 0 # keep track of position
