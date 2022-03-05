@@ -10,7 +10,8 @@ def segment_builder(arg, tail):
     if len(arg) == 3:
         segments = arg[2]
     else:
-        segments = 1
+        g = int(100 / divisions + 1)
+        segments = tuple([n for n in range(1, g)])
 
     def builder(segments):
         """
@@ -29,8 +30,6 @@ def segment_builder(arg, tail):
         we can continue with an even division. math.floor is used for precaution only.
         """
         partition_size = math.floor(division_dec * (len(req_list)  - remainder))
-        print(f"Remainder is {remainder}")
-        print(f"partition size is {partition_size}")
         segment_storage = []
         if remainder > 0:
             """
@@ -39,7 +38,6 @@ def segment_builder(arg, tail):
             """
             extras = len(req_list) - remainder
             group_extras = partition_count - remainder
-            print(f"{extras} {group_extras}")
 
             pos = 0 # keep track of position
             if tail == False:
