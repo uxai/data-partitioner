@@ -1,8 +1,7 @@
 # Data Partitioner
 A small project that allows you to divide up a string, list or tuple into even percentage, and return the specified segment or partition.
 
-**Note:**
-It currently doesn't handle inputting a percentage higher than 50% too well, if at all. I'm working on it :)
+> **Note:** It currently doesn't handle inputting a percentage higher than 50% too well, also working on a bug where percentages are not evenly divisible cause issues.
 
 ## Installation
 Simply clone from GitHub or Pypi with the following command:
