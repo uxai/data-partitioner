@@ -4,12 +4,9 @@ A small project that allows you to divide up a string, list or tuple into even p
 > **Note:** It currently doesn't handle inputting a percentage higher than 50% too well, also working on a bug where percentages are not evenly divisible cause issues.
 
 ## Installation
-Simply clone from GitHub or Pypi with the following command:
+Simply clone from GitHub with the following command:
 ```
 git@github.com:uxai/data-partitioner.git
-```
-```
-pip install data-partitioner
 ```
 
 ## Usage
