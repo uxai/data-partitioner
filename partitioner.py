@@ -1,4 +1,4 @@
-from src.build_segments import *
+from build_segments import *
 
 def pal(*args, tail=False):
     final_outcome = []
